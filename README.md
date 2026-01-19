@@ -17,7 +17,7 @@ to identify opportunities to convert casual riders into annual members.
 ## Tools
 - R (tidyverse, dplyr, ggplot2)
 - SQL (BigQuery)
-- Google Sheets
+- Excel
 
 ---
 
