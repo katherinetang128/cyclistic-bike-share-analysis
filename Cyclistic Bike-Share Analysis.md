@@ -68,6 +68,14 @@ Created charts to visualize ride volume and ride length distributions.
 
 These patterns highlight clear behavioral differences between rider groups.
 
+**Visualizations**
+
+**Ride Volume by Day of Week**
+![Ride Volume by Day](visuals/rides_by_day.png)
+
+**Ride Length Distribution by User Type**
+![Ride Length Distribution](visuals/ride_length_distribution.png)
+
 **Business Recommendations**
 
 Based on the analysis, Cyclistic can increase membership conversions by:
@@ -143,6 +151,7 @@ install.packages(c("tidyverse", "lubridate"))
 **Contact**
 
 For questions or collaboration opportunities, feel free to connect via GitHub or LinkedIn.
+
 
 
 
