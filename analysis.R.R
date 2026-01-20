@@ -24,6 +24,17 @@ rides <- file_list %>%
 # --------------------
 # Data Cleaning and Feature Engineering
 # --------------------
+rides <- rides %>%
+  mutate(
+    started_at = start_time,
+    ended_at = end_time
+  )
+
+rides <- rides %>%
+  mutate(
+    started_at = parse_date_time(start_time, orders = "dmy HMS"),
+    ended_at = parse_date_time(end_time, orders = "dmy HMS")
+  )
 
 rides_clean <- rides %>%
   filter(!is.na(started_at), !is.na(ended_at)) %>%
@@ -45,7 +56,8 @@ rides_clean <- rides_clean %>%
       !is.na(usertype) & usertype == "Customer" ~ "casual",
       TRUE ~ NA_character_
     )
-  )
+  ) %>%
+  filter(!is.na(user_type_clean))
 
 # --------------------
 # Summary Statistics
@@ -100,4 +112,5 @@ ggplot(rides_clean, aes(x = user_type_clean, y = ride_length, fill = user_type_c
     x = "User Type",
     y = "Ride Length (Minutes)"
   )
+
 
