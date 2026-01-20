@@ -108,9 +108,9 @@ Cyclistic-Analysis
 
 └── visuals
 
-&nbsp;   ├── rides\_by\_day.pdf
+&nbsp;   ├── rides\_by\_day.png
 
-&nbsp;   └── ride\_length\_distribution.pdf
+&nbsp;   └── ride\_length\_distribution.png
 
 **How To Run This Project**
 
@@ -151,6 +151,7 @@ install.packages(c("tidyverse", "lubridate"))
 **Contact**
 
 For questions or collaboration opportunities, feel free to connect via GitHub or LinkedIn.
+
 
 
 
